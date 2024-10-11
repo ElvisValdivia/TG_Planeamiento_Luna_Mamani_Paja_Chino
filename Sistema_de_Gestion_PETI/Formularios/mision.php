@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <a class="volver" href="../index.php">INDICE</a>
+    <a class="volver" href="../principal.php">INDICE</a>
     
     <div class="container">
         <!-- Título Principal -->
@@ -58,8 +58,8 @@
         <textarea rows="5" style="width: 100%;"></textarea>
 
         <div class="info-box">
-            <a class="info-item" href="../index.php">INDICE</a>
-            <a class="info-item" href="../formularios/vision.php">2. VISIÓN</a>
+            <a class="info-item" href="../principal.php">INDICE</a>
+            <a class="info-item" href="../Formularios/vision.php">2. VISIÓN</a>
         </div>
 
     </div>

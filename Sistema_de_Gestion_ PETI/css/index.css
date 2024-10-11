@@ -42,9 +42,9 @@ p, h2 {
 h3 {
     font-size: 16px;
     color: #333;
-    text-align: center; /* Centrar el texto */
+    text-align: center;
     margin: 20px 0;
-    font-weight: bold; /* Cambiar a negrita */
+    font-weight: bold;
 }
 
 /* Centrar el contenedor de la lista */

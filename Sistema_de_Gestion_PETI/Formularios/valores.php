@@ -14,8 +14,9 @@
     <h2>3. VALORES</h2>
     
     <div class="info">
-        <p>Empresa productora de café</p>
-        <p>Nuestro valor es la búsqueda de la perfección o bien la pasión por la excelencia, entendida como amor por lo bello y bien hecho, y la ética, entendida como construcción de valor en el tiempo a través de la sostenibilidad, la transparencia, y la valorización de las personas.</p>
+        <p>Empresa</p>
+        <p>Los VALORES de una empresa son el conjunto de principios, reglas y aspectos culturales con los que se rige la organización. 
+            Son las pautas de comportamiento de la empresa y generalmente son pocos, entre 3 y 6. Son tan fundamentales y tan arraigados que casi nunca cambian.</p>
         <p>Agencia de certificación</p>
         <ul>
             <li>Integridad y ética</li>

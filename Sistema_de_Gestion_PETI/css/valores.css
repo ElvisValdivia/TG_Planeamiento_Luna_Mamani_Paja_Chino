@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #009688;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #009688;
+    text-align: center;
+}
+
+.info {
+    background: #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background: #009688;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%; /* Ajustar ancho para los botones */
+}
+
+input[type="submit"]:hover {
+    background: #00796b;
+}
+
+.instructions {
+    background: #b2ebf2;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}

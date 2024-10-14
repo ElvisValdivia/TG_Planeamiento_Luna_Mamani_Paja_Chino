@@ -17,11 +17,18 @@
         <p>Empresa</p>
         <p>Los VALORES de una empresa son el conjunto de principios, reglas y aspectos culturales con los que se rige la organización. 
             Son las pautas de comportamiento de la empresa y generalmente son pocos, entre 3 y 6. Son tan fundamentales y tan arraigados que casi nunca cambian.</p>
-        <p>Agencia de certificación</p>
+
+        <p> * Compromiso con el desarrollo humano.</p>
+        <p> * Etica Profesional.</p>
+        <p> * Responsabilidad Profesional.</p>
+        <p> * Innovacion.</p>
+
+
+        <p>EJEMPLOS</p>
         <ul>
-            <li>Integridad y ética</li>
-            <li>Consejo y validación imparciales</li>
-            <li>Respeto por todas las personas</li>
+        <li>Empresas de Servicios</li>
+            <li>La Excelencia en la prestacion de servicios</li>
+            <li>La innovacion orientada a la mejora continua de procesos y productos y la promocion del dialogo y compromiso con los grupos de interes</li>
             <li>Responsabilidad social y medioambiental</li>
         </ul>
     </div>

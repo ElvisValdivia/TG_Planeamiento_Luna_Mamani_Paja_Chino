@@ -14,19 +14,29 @@ body {
 }
 
 .indice-button {
+<<<<<<< HEAD
     background-color: #007BFF;
     color: white;
+=======
+    background-color: #007BFF; /* Color del botón */
+    color: white; /* Color del texto */
+>>>>>>> 7452b4636214ba1537053696c891167375d2de06
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+<<<<<<< HEAD
     position: absolute;
+=======
+    position: absolute; /* Para posicionar en la esquina superior izquierda */
+>>>>>>> 7452b4636214ba1537053696c891167375d2de06
     top: 20px;
     left: 20px;
 }
 
 .indice-button:hover {
+<<<<<<< HEAD
     background-color: #0056b3;
 }
 
@@ -35,10 +45,14 @@ body {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
+=======
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+>>>>>>> 7452b4636214ba1537053696c891167375d2de06
 }
 
 h1 {
     font-size: 24px;
+<<<<<<< HEAD
     color: white;
 }
 
@@ -51,12 +65,16 @@ h1 {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 5px;
+=======
+    margin-top: 60px; /* Espacio debajo del botón */
+>>>>>>> 7452b4636214ba1537053696c891167375d2de06
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
 }
+<<<<<<< HEAD
 
 .cuadros-container {
     display: flex;
@@ -72,3 +90,5 @@ p {
     text-align: center;
     font-size: 18px;
 }
+=======
+>>>>>>> 7452b4636214ba1537053696c891167375d2de06

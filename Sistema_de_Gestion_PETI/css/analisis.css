@@ -59,11 +59,29 @@ p {
 }
 
 .imagen-container {
-    text-align: center; /* Centra la imagen */
-    margin-top: 20px; /* Espacio superior para la imagen */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .imagen-analisis {
-    max-width: 100%; /* Asegura que la imagen no desborde el contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%;
+    height: auto;
+}
+
+.texto-analisis {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #007B7F;
+    margin-top: 20px;
+}
+
+.editable-box {
+    background-color: #D3D3D3; /* Fondo gris */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: text; /* Cambia el cursor al pasar sobre el cuadro */
 }

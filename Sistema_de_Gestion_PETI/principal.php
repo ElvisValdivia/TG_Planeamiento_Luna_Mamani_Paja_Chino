@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Estratégico</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/principal.css">
 </head>
 
 <body>
@@ -62,15 +62,15 @@
         </h3>
 
         <div class="info-box2">
-            <a class="info-item" href="formularios/informacion.php">INFORMACIÓN</a>
+            <a class="info-item" href="Formularios/informacion.php">INFORMACIÓN</a>
         </div>
 
         <!-- Información en formato tabla de botones -->
         <div class="info-box">
-            <a class="info-item" href="formularios/mision.php">1. MISIÓN</a>
-            <a class="info-item" href="formularios/analisis_interno_externo.php">5. ANÁLISIS INTERNO Y EXTERNO</a>
-            <a class="info-item" href="formularios/pest.php">9. PEST</a>
-            <a class="info-item" href="formularios/vision.php">2. VISIÓN</a>
+            <a class="info-item" href="Formularios/mision.php">1. MISIÓN</a>
+            <a class="info-item" href="Formularios/analisis_interno_externo.php">5. ANÁLISIS INTERNO Y EXTERNO</a>
+            <a class="info-item" href="Formularios/pest.php">9. PEST</a>
+            <a class="info-item" href="Formularios/vision.php">2. VISIÓN</a>
             <a class="info-item" href="formularios/cadena_valor.php">6. CADENA DE VALOR</a>
             <a class="info-item" href="formularios/identificacion_estrategia.php">10. IDENTIFICACIÓN ESTRATEGIA</a>
             <a class="info-item" href="formularios/valores.php">3. VALORES</a>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="info-box2">
-            <a class="info-item" href="formularios/resumen.php">RESUMEN DEL PLAN EJECUTIVO</a>
+            <a class="info-item" href="Formularios/resumen.php">RESUMEN DEL PLAN EJECUTIVO</a>
         </div>
 
     </div>

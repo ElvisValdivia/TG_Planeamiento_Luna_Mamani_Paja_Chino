@@ -78,10 +78,81 @@ h2 {
     margin-top: 20px;
 }
 
-.editable-box {
-    background-color: #D3D3D3; /* Fondo gris */
+.non-editable-box {
+    background-color: #D3D3D3;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
-    cursor: text; /* Cambia el cursor al pasar sobre el cuadro */
+}
+
+.editable-box {
+    background-color: #FFFFFF; /* Color de fondo del texto editable */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: text;
+}
+
+.foda-container {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.foda-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.foda-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.foda-box.fortalezas {
+    background-color: #A8D5BA; /* Color para Fortalezas */
+}
+
+.foda-box.oportunidades {
+    background-color: #FFD59A; /* Color para Oportunidades */
+}
+
+.foda-box.debilidades {
+    background-color: #FFABAB; /* Color para Debilidades */
+}
+
+.foda-box.amenazas {
+    background-color: #FFC3A0; /* Color para Amenazas */
+}
+
+h3 {
+    margin: 0;
+    color: #333; /* Color para los títulos de los cuadros */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
 }

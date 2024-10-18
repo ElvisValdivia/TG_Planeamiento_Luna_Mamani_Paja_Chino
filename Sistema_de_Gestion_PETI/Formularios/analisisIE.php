@@ -20,26 +20,55 @@
         </div>
         <div class="texto-analisis">
             <h2>Oportunidades:</h2>
-            <p>Aquellos aspectos que pueden presentar una posibilidad para mejorar la rentabilidad de la empresa, aumentar la cifra de negocio y fortalecer la ventaja competitiva.</p>
-            <div class="editable-box" contenteditable="true">
+            <p>aquellos aspectos que pueden presentar una posibilidad para mejorar la rentabilidad de la empresa, aumentar la cifra de negocio y fortalecer la ventaja competitiva.</p>
+            <div class="non-editable-box">
                 Ejemplos: Fuerte crecimiento, desarrollo de la externalización, nuevas tecnologías, seguridad de la distribución, atender a grupos adicionales de clientes, crecimiento rápido del mercado, etc.
             </div>
             <h2>Amenazas:</h2>
-            <p>Son fuerzas y presiones del mercado-entorno que pueden impedir y dificultar el crecimiento de la empresa, la ejecución de la estrategia, reducir su eficacia o incrementar los riesgos en relación con el entorno y sector de actividad.</p>
-            <div class="editable-box" contenteditable="true">
+            <p>son fuerzas y presiones del mercado-entorno que pueden impedir y dificultar el crecimiento de la empresa, la ejecución de la estrategia, reducir su eficacia o incrementar los riesgos en relación con el entorno y sector de actividad.</p>
+            <div class="non-editable-box">
                 Ejemplos: Competencia en el mercado, aparición de nuevos competidores, reglamentación, monopolio en una materia prima, cambio en las necesidades de los consumidores, creciente poder de negociación de clientes y/o proveedores, etc.
             </div>
             <h2>Fortalezas:</h2>
-            <p>Son capacidades, recursos, posiciones alcanzadas, ventajas competitivas que posee la empresa y que le ayudarán a aprovechar las oportunidades del mercado.</p>
-            <div class="editable-box" contenteditable="true">
+            <p>son capacidades, recursos, posiciones alcanzadas, ventajas competitivas que posee la empresa y que le ayudarán a aprovechar las oportunidades del mercado.</p>
+            <div class="non-editable-box">
                 Ejemplos: Buena implantación en el territorio, notoriedad de la marca, capacidad de innovación, recursos financieros adecuados, ventajas en costes, líder en el mercado, buena imagen ante los consumidores, etc.
             </div>
             <h2>Debilidades:</h2>
-            <p>Son todos aquellos aspectos que limitan o reducen la capacidad de desarrollo de la empresa. Constituyen dificultades para la organización y deben, por tanto, ser controladas y superadas.</p>
-            <div class="editable-box" contenteditable="true">
+            <p>son todos aquellos aspectos que limitan o reducen la capacidad de desarrollo de la empresa. Constituyen dificultades para la organización y deben, por tanto, ser controladas y superadas.</p>
+            <div class="non-editable-box">
                 Ejemplos: Precios elevados, productos en el final de su ciclo de vida, deficiente control de los riesgos, recursos humanos poco cualificados, débil imagen en el mercado, red de distribución débil, no hay dirección estratégica clara, etc.
             </div>
             <p>Para elaborar el análisis FODA de su empresa, le proponemos que utilice distintos instrumentos para el análisis tanto interno como externo.</p>
+        </div>
+
+        <div class="foda-container">
+            <h2>FODA:</h2>
+            <div class="foda-section">
+                <div class="foda-box fortalezas">
+                    <h3>Fortalezas</h3>
+                    <div class="editable-box" contenteditable="true">Ingrese aquí sus fortalezas...</div>
+                </div>
+                <div class="foda-box oportunidades">
+                    <h3>Oportunidades</h3>
+                    <div class="editable-box" contenteditable="true">Ingrese aquí sus oportunidades...</div>
+                </div>
+            </div>
+            <div class="foda-section">
+                <div class="foda-box debilidades">
+                    <h3>Debilidades</h3>
+                    <div class="editable-box" contenteditable="true">Ingrese aquí sus debilidades...</div>
+                </div>
+                <div class="foda-box amenazas">
+                    <h3>Amenazas</h3>
+                    <div class="editable-box" contenteditable="true">Ingrese aquí sus amenazas...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="nav-button left-button">4. OBJETIVOS ESPECÍFICOS</button>
+            <button class="nav-button right-button">6. CADENA DE VALOR</button>
         </div>
     </div>
 </body>

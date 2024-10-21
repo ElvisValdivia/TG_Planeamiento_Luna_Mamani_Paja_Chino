@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: #5ba3d9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+}
+
+.matriz {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.matriz img {
+    width: 100%; /* Ajusta el tamaño de la imagen para que ocupe todo el ancho disponible */
+    max-width: 600px; /* Establece un tamaño máximo para que no sea demasiado grande */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.header-1 {
+    background-color: #f5c6cb;
+    font-weight: bold;
+}
+
+.header-2 {
+    background-color: #f8d7da;
+    font-weight: bold;
+}
+
+.decision td {
+    background-color: #f8d7da;
+}
+
+.highlight {
+    background-color: #f5c6cb;
+    font-weight: bold;
+    color: #721c24;body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header {
+        background-color: #5ba3d9;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    .header h1 {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+    }
+    
+    p {
+        text-align: justify;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-top: 40px;
+    }
+    
+    .matriz {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .matriz img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    th {
+        background-color: #f5c6cb; /* Fondo rosado claro para los encabezados */
+    }
+    
+    .header-1 {
+        background-color: #f5c6cb; /* Fondo rosado claro para las características */
+        font-weight: bold;
+    }
+    
+    td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+        background-color: #d1ecf1; /* Fondo azul claro para las columnas Estrella, Incógnita, Vaca y Perro */
+    }
+    
+    .decision {
+        background-color: #f8d7da;
+    }
+    
+    .decision td {
+        background-color: #f8d7da; /* Fondo rosado más fuerte para la fila de decisiones */
+        font-weight: bold;
+    }
+    
+    td.highlight {
+        background-color: #f5c6cb; /* Fondo rosado claro para las decisiones estratégicas */
+        color: #721c24;
+        font-weight: bold;
+    }
+    
+}

@@ -1,0 +1,66 @@
+/* Estructura general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Título de cada sección */
+h2 {
+    background-color: #008080;
+    color: #ffffff;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 0;
+}
+
+/* Textos destacados */
+p.important {
+    color: red;
+    font-weight: bold;
+}
+
+.blue-text {
+    color: blue;
+}
+p[style*="color:green;"] {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Botón de información */
+.info-box2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info-item {
+    display: inline-block;
+    background-color: #008080;
+    color: #ffffff;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-item:hover {
+    background-color: #005555;
+}

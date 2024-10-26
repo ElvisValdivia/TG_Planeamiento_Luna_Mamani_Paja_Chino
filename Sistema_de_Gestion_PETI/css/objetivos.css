@@ -1,0 +1,37 @@
+/* Estilo del encabezado */
+.header h2 {
+    background-color: #3da5b5; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    font-size: 24px; /* Tamaño del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 15px; /* Añadir espacio alrededor del texto */
+    font-weight: bold; /* Hacer el texto en negrita */
+    margin: 0; /* Eliminar margen extra */
+}
+/* Tabla de METAS */
+.metas-table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre bordes de celdas */
+    margin-top: 20px;
+}
+
+.metas-table th, .metas-table td {
+    border: 1px solid black; /* Bordes de las celdas */
+    padding: 10px; /* Espacio interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.metas-table th {
+    background-color: #6d7623; /* Color de fondo oliva para las iniciales */
+    color: white; /* Color de texto blanco */
+    width: 50px; /* Ajuste del ancho de la columna de iniciales */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.metas-table td strong {
+    font-weight: bold; /* Negrita solo para las palabras importantes */
+}
+
+.metas-table td {
+    vertical-align: top; /* Alineación del texto en la parte superior */
+}

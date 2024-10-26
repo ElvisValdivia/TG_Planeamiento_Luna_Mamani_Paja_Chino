@@ -71,13 +71,13 @@
             <a class="info-item" href="Formularios/analisis_interno_externo.php">5. ANÁLISIS INTERNO Y EXTERNO</a>
             <a class="info-item" href="Formularios/pest.php">9. PEST</a>
             <a class="info-item" href="Formularios/vision.php">2. VISIÓN</a>
-            <a class="info-item" href="formularios/cadena_valor.php">6. CADENA DE VALOR</a>
-            <a class="info-item" href="formularios/identificacion_estrategia.php">10. IDENTIFICACIÓN ESTRATEGIA</a>
-            <a class="info-item" href="formularios/valores.php">3. VALORES</a>
-            <a class="info-item" href="formularios/matriz_participacion.php">7. MATRIZ DE PARTICIPACIÓN</a>
-            <a class="info-item" href="formularios/matriz_came.php">11. MATRIZ CAME</a>
-            <a class="info-item" href="formularios/objetivos.php">4. OBJETIVOS</a>
-            <a class="info-item" href="formularios/5_fuerzas_porter.php">8. LAS 5 FUERZAS DE PORTER</a>
+            <a class="info-item" href="Formularios/cadena.php">6. CADENA DE VALOR</a>
+            <a class="info-item" href="Formularios/identificacion_estrategia.php">10. IDENTIFICACIÓN ESTRATEGIA</a>
+            <a class="info-item" href="Formularios/valores.php">3. VALORES</a>
+            <a class="info-item" href="Formularios/matriz_participacion.php">7. MATRIZ DE PARTICIPACIÓN</a>
+            <a class="info-item" href="Formularios/matriz_came.php">11. MATRIZ CAME</a>
+            <a class="info-item" href="Formularios/objetivos.php">4. OBJETIVOS</a>
+            <a class="info-item" href="Formularios/5_fuerzas_porter.php">8. LAS 5 FUERZAS DE PORTER</a>
         </div>
 
         <div class="info-box2">

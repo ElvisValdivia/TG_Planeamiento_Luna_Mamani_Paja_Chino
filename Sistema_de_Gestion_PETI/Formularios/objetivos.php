@@ -1,3 +1,56 @@
+<?php
+session_start(); // Iniciar la sesión
+
+// Habilitar la visualización de errores
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Incluir el archivo de conexión a la base de datos
+include('../Conexion/conexion.php');
+
+// Verificar si el usuario está logueado
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: ../InicioSesion/login.php");
+    exit();
+}
+
+// Obtener el ID del usuario desde la sesión
+$id_usuario = $_SESSION['usuario_id'];
+
+// Consulta para obtener `unidad_estrategica` desde la base de datos para el usuario actual
+$sql = "SELECT unidad_estrategica FROM empresa WHERE id_usuario = ?";
+if ($stmt = $conn->prepare($sql)) {
+    $stmt->bind_param("i", $id_usuario);
+    $stmt->execute();
+    $stmt->bind_result($unidadEstrategica);
+    $stmt->fetch();
+    $stmt->close();
+}
+
+// Inicializar variables para almacenar los datos de la base de datos
+$mision = '';
+$objetivos_generales = ["", "", ""]; // Valor por defecto en caso de no obtener datos
+$objetivos_especificos = [[""], [""], [""]]; // Valor por defecto en caso de no obtener datos
+
+// Consultar la misión, objetivos generales y específicos de la base de datos
+$sql = "SELECT mision, objetivos_generales, objetivos_especificos FROM empresa WHERE id_usuario = ?";
+if ($stmt = $conn->prepare($sql)) {
+    $stmt->bind_param("i", $id_usuario);
+    $stmt->execute();
+    $stmt->bind_result($mision, $objetivos_generales_str, $objetivos_especificos_str);
+    if ($stmt->fetch()) {
+        // Convertir los datos de la base de datos a arreglos si existen valores
+        $objetivos_generales = $objetivos_generales_str ? explode(", ", $objetivos_generales_str) : ["", "", ""];
+        $objetivos_especificos = $objetivos_especificos_str ? array_map(function ($obj) {
+            return explode(", ", $obj);
+        }, explode("], [", trim($objetivos_especificos_str, "[]"))) : [[""], [""], [""]];
+    }
+    $stmt->close();
+}
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -25,7 +78,6 @@
             <div class="rectangulo rectangulo2">Objetivos Estratégicos o Generales</div>
             <div class="rectangulo rectangulo3">Objetivos Específicos</div>
         </div>
-
 
         <p><strong>Objetivos estratégicos:</strong> Concretan el contenido de la misión. Suelen referirse al
             crecimiento, rentabilidad y a la sostenibilidad de la empresa. Su horizonte es entre 3 a 5 años.</p>
@@ -66,43 +118,26 @@
             <h3>EJEMPLOS</h3>
             <h3>Empresa de servicios</h3>
             <ul>
-                <h2>
-                    <li>Alcanzar los niveles de ventas previstos para los nuevos productos</li>
-                </h2>
-                <h2>
-                    <li>Reducir la rotación del personal del almacén</li>
-                </h2>
-                <h2>
-                    <li>Reducir el plazo de cobro de los clientes</li>
-                </h2>
-                <h2>
-                    <li>Reducir la siniestralidad al nivel fijado</li>
-                </h2>
-                <h2>
-                    <li>Alcanzar los objetivos de beneficios previstos</li>
-                </h2>
-                <h2>
-                    <li>Mejorar la claridad de entrega de los productos en el plazo previsto</li>
-                </h2>
+                <li>Alcanzar los niveles de ventas previstos para los nuevos productos</li>
+                <li>Reducir la rotación del personal del almacén</li>
+                <li>Reducir el plazo de cobro de los clientes</li>
+                <li>Reducir la siniestralidad al nivel fijado</li>
+                <li>Alcanzar los objetivos de beneficios previstos</li>
+                <li>Mejorar la claridad de entrega de los productos en el plazo previsto</li>
             </ul>
         </div>
 
-
         <p>En empresas de gran tamaño, se pueden formular los objetivos estratégicos en función de sus diferentes
-            <strong>unidades estratégicas de negocio </strong>(UEN). Estas UEN se hacen especialmente necesarias en las
-            empresas
-            diversificadas o con multiactividad donde la heterogeneidad de los distintos negocios hace inviable un
-            tratamiento estratégico conjunto de los mismos.
+            <strong>unidades estratégicas de negocio</strong> (UEN). Estas UEN se hacen especialmente necesarias en las
+            empresas diversificadas o con multiactividad donde la heterogeneidad de los distintos negocios hace inviable
+            un tratamiento estratégico conjunto de los mismos.
         </p>
 
         <p>Se entiende por unidad estratégica de negocio (UEN) ("strategic business unit" [SBU]) <strong>un conjunto
-                homogéneo
-                de actividades o negocios, desde el punto de vista estratégico, es decir, para el cual es posible
-                formular
-                una estrategia común y a su vez diferente de la estrategia adecuada para otras actividades y/o unidades
-                estratégicas.</strong>
-            La estrategia de cada unidad es autónoma, pero no independiente de las demás unidades estratégicas, puesto
-            que se integran en la estrategia de la empresa.</p>
+                homogéneo de actividades o negocios, desde el punto de vista estratégico, es decir, para el cual es
+                posible formular una estrategia común y a su vez diferente de la estrategia adecuada para otras
+                actividades y/o unidades estratégicas.</strong> La estrategia de cada unidad es autónoma, pero no
+            independiente de las demás unidades estratégicas, puesto que se integran en la estrategia de la empresa.</p>
 
         <h5 style="text-align: center; font-size: 18px;">¿Cómo podemos identificar a las UEN?</h5>
 
@@ -113,62 +148,85 @@
         <p>•<strong> Tecnología:</strong> Forma en la cual la empresa cubre a través del producto o servicio la
             necesidad de la clientela.</p>
 
-        <h4 style="text-align: center;">En su caso, comente en este apartado las distintas UEN que tiene su empresa</h4>
-        <div style="display: flex; justify-content: center;">
-            <table border="1" cellpadding="10">
+        <form action="guardarObj.php" method="POST">
+            <h4 style="text-align: center;">En su caso, comente en este apartado las distintas UEN que tiene su empresa
+            </h4>
+            <div style="display: flex; justify-content: center;">
+                <table border="1" cellpadding="10">
+                    <tr>
+                        <td>
+                            <textarea name="unidad_estrategica" rows="10"
+                                cols="80"><?php echo htmlspecialchars($unidadEstrategica ?? ''); ?></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+
+            <h4 style="text-align: center;">A continuación reflexione sobre la misión, visión y valores definidos y
+                establezca los objetivos estratégicos y específicos de su empresa. Le proponemos que comience con
+                definir 3
+                objetivos estratégicos y dos específicos para cada uno de ellos</h4>
+
+            <table>
+                <tr>
+                    <th>MISIÓN</th>
+                    <th>OBJETIVOS GENERALES O ESTRATÉGICOS</th>
+                    <th>OBJETIVOS ESPECÍFICOS</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <textarea name="mision" rows="5"
+                            cols="30"><?php echo htmlspecialchars($mision ?? ''); ?></textarea>
+                    </td>
+                    <td>
+                        <textarea name="objetivos_generales[]" rows="5"
+                            cols="30"><?php echo htmlspecialchars($objetivos_generales[0] ?? ''); ?></textarea>
+                    </td>
+                    <td>
+                        <textarea name="objetivos_especificos[0][]" rows="5"
+                            cols="30"><?php echo htmlspecialchars($objetivos_especificos[0][0] ?? ''); ?></textarea>
+                    </td>
+                </tr>
                 <tr>
                     <td>
-                        <textarea rows="10" cols="80"></textarea>
+                        <textarea name="objetivos_generales[]" rows="5"
+                            cols="30"><?php echo htmlspecialchars($objetivos_generales[1] ?? ''); ?></textarea>
+                    </td>
+                    <td>
+                        <textarea name="objetivos_especificos[1][]" rows="5"
+                            cols="30"><?php echo htmlspecialchars($objetivos_especificos[0][1] ?? ''); ?></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="objetivos_generales[]" rows="5"
+                            cols="30"><?php echo htmlspecialchars($objetivos_generales[2] ?? ''); ?></textarea>
+                    </td>
+                    <td>
+                        <textarea name="objetivos_especificos[2][]" rows="5"
+                            cols="30"><?php echo htmlspecialchars($objetivos_especificos[0][2] ?? ''); ?></textarea>
                     </td>
                 </tr>
             </table>
-        </div>
-        <br>
-        <h4 style="text-align: center;">A continuación reflexione sobre la misión, visión y valores definidos y
-            establezca los objetivos estratégicos y específicos de su empresa. Le proponemos que comience con definir 3
-            objetivos estratégicos y dos específicos para cada uno de ellos</h4>
+            <input type="submit" value="Guardar">
+        </form>
 
-        <table>
-            <tr>
-                <th>MISIÓN</th>
-                <th>OBJETIVOS GENERALES O ESTRATÉGICOS</th>
-                <th>OBJETIVOS ESPECÍFICOS</th>
-            </tr>
-            <tr>
-                <td rowspan="3">
-                    <textarea></textarea>
-                </td>
-                <td>
-                    <textarea></textarea>
-                </td>
-                <td>
-                    <textarea></textarea>
-                </td>
-                
-            </tr>
-            <tr>
-                <td>
-                    <textarea></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <textarea></textarea>
-                </td>
-                <td>
-                    <textarea></textarea>
-                </td>
-            </tr>
 
-        </table>
 
         <div class="info-box">
             <a class="info-item" href="../Formularios/valores.php">3. VALORES</a>
             <a class="info-item" href="../Formularios/analisisIE.php">5. ANÁLISIS INTERNO Y EXTERNO</a>
         </div>
+
+        <?php
+        // Mostrar mensaje si existe
+        if (isset($_SESSION['mensaje'])) {
+            echo "<div class='mensaje'>" . $_SESSION['mensaje'] . "</div>";
+            unset($_SESSION['mensaje']); // Limpiar mensaje después de mostrar
+        }
+        ?>
     </div>
-
-
 </body>
 
 </html>

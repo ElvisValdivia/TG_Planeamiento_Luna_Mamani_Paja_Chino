@@ -1,13 +1,16 @@
 <?php
-$host = 'localhost';
-$usuario = 'root';
-$contraseña = '';
-$nombre_base_datos = 'bd_peti';
+// Datos de conexión
+$servidor = "localhost";
+$usuario = "root";
+$contrasena = ""; // Asegúrate de que este campo esté vacío o que contenga la contraseña correcta
+$base_datos = "bd_peti";
+$puerto = "3306"; // Puerto especificado
 
-$conn = new mysqli($host, $usuario, $contraseña, $nombre_base_datos);
+// Crear conexión
+$conn = new mysqli($servidor, $usuario, $contrasena, $base_datos, $puerto);
 
+// Verificar conexión
 if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
-echo "Conexión exitosa";
 ?>

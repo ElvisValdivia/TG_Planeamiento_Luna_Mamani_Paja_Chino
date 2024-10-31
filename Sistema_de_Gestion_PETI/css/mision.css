@@ -30,14 +30,12 @@ h2 {
     color: #7c7b7b;
     font-weight: normal;
     margin-bottom: 10px;
-    /* Ajusta el valor según lo necesites */
 }
 
 h3 {
     font-size: 18px;
     color: #867e7e;
     margin-top: 0;
-    /* Puedes mantenerlo en 0 o ajustar si lo deseas */
 }
 
 p {
@@ -61,7 +59,6 @@ textarea:focus {
     outline: none;
 }
 
-
 .ejemplos {
     background-color: #f0f0f0;
     padding: 15px;
@@ -78,6 +75,32 @@ h4 {
     font-style: italic;
     border-radius: 4px;
     margin-top: 0;
+}
+
+/* Estilo del botón Guardar */
+button[type="submit"] {
+    background-color: #2596be; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 100%; /* Ancho completo */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Efecto al pasar el mouse */
+button[type="submit"]:hover {
+    background-color: #1a6d8d; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+}
+
+/* Efecto al hacer clic */
+button[type="submit"]:active {
+    background-color: #0056b3; /* Color de fondo al hacer clic */
+    transform: scale(0.95); /* Reduce el tamaño ligeramente al hacer clic */
 }
 
 /* Botones en cuadrícula */

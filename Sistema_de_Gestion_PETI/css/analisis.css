@@ -151,6 +151,8 @@ h3 {
     cursor: pointer;
     flex: 1;
     margin: 0 5px;
+    text-decoration: none; /* Asegura que no haya subrayado */
+    display: inline-block; /* Permite el padding y el background */
 }
 
 .nav-button:hover {

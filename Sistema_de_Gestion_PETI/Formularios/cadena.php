@@ -11,7 +11,7 @@
 <body>
     <a class="volver" href="../principal.php">INDICE</a>
     <div class="container">
-        <h1>Análisis Interno: La Cadena de Valor</h1>
+        <h1>6. Análisis Interno: La Cadena de Valor</h1>
         <p>Todas las actividades de una empresa forman la cadena de valor.</p>
         <p>
             La Cadena de Valor es una herramienta que permite a la empresa identificar aquellas actividades o fases
@@ -67,14 +67,17 @@
             para desempeñar las actividades generadoras de valor.
         </p>
 
-        <p>Cada eslabón de la cadena puede ser fuente de ventaja competitiva, ya sea porque se optimice (excelencia en
-            la ejecución de una actividad) y/o mejore su coordinación con otra actividad.</p>
+       
 
         <img src="../Images/cuadro.png" class="imagen-cadena">
+        <p>Cada eslabón de la cadena puede ser fuente de ventaja competitiva, ya sea porque se optimice (excelencia en
+        la ejecución de una actividad) y/o mejore su coordinación con otra actividad.</p>
         <p class="info-final">
             A continuación le proponemos un autodiagnóstico de la cadena de valor interna para conocer porcentualmente
             el potencial de mejora de la cadena de valor.
         </p>
+
+        
 
         <div class="info-box">
             <a class="info-item" href="../Formularios/analisisIE.php">5. ANÁLISIS INTERNO Y EXTERNO</a>

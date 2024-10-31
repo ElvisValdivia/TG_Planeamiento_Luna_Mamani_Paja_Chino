@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fondo de la página */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 50%; /* Ancho del contenedor principal */
+    margin: 0 auto; /* Centrando el contenedor */
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.header {
+    background-color: #5ba3d9; /* Color del encabezado */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    text-align: center; /* Centrar el texto */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño del texto */
+}
+
+p {
+    text-align: justify; /* Justificar el texto */
+    font-size: 16px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Altura de línea */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+h2 {
+    text-align: center; /* Centrar el texto */
+    color: #333; /* Color del texto */
+    margin-top: 40px; /* Margen superior */
+}
+
+.matriz {
+    text-align: center; /* Centrar contenido */
+    margin: 20px 0; /* Margen vertical */
+}
+
+.matriz img {
+    width: 100%; /* Ajustar tamaño de imagen */
+    max-width: 600px; /* Tamaño máximo */
+    height: auto; /* Mantener proporción */
+}
+
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Margen superior */
+}
+
+th, td {
+    border: 1px solid black; /* Bordes de tabla */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+th {
+    background-color: #f5c6cb; /* Color de fondo de encabezados */
+}
+
+.header-1 {
+    background-color: #f5c6cb; /* Fondo rosado claro para características */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.header-2 {
+    background-color: #f8d7da; /* Fondo para la segunda cabecera */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.decision {
+    background-color: #f8d7da; /* Fondo para decisiones */
+}
+
+.highlight {
+    background-color: #f5c6cb; /* Fondo para elementos destacados */
+    font-weight: bold; /* Texto en negrita */
+    color: #721c24; /* Color del texto destacado */
+}
+
+.volver {
+    display: inline-block; /* Mostrar como bloque en línea */
+    background-color: #f08080; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 8px; /* Bordes redondeados */
+    border: 2px solid #4a4a4a; /* Borde */
+    position: fixed; /* Posición fija */
+    top: 50px; /* Distancia desde arriba */
+    left: 190px; /* Distancia desde la izquierda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.volver:hover {
+    background-color: #ff6961; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para textarea y otros elementos adicionales pueden ser añadidos aquí */
+textarea {
+    margin-top: 20px; /* Margen superior */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 3px double #007bff; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+textarea:focus {
+    border-color: #0056b3; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno */
+}
+
+.ejemplos {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+h4 {
+    background-color: #cedce1; /* Fondo gris claro para h4 */
+    color: #000000; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    font-style: italic; /* Estilo en cursiva */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-top: 0; /* Sin margen superior */
+}
+
+
+.info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.info-item {
+    display: block;
+    background-color: #008080;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.info-item:first-child {
+    grid-column: 1;
+}
+
+.info-item:last-child {
+    grid-column: 2;
+}

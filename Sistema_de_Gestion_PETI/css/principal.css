@@ -95,3 +95,26 @@ ul li {
 .info-item:hover {
     background-color: #005555; 
 }
+
+/* Ajuste para el botón de cerrar sesión */
+.cerrar-sesion-container {
+    text-align: center; /* Centra el botón */
+    margin-top: 10px;  /* Espaciado superior para separarlo más del contenido anterior */
+}
+
+.cerrar-sesion {
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    padding: 10px 15px; /* Espaciado alrededor del texto */
+    border: 1px solid #ccc; /* Borde alrededor del botón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #f8f8f8; /* Color de fondo */
+    color: #333; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición para el hover */
+    display: inline-block; /* Permite establecer un ancho específico */
+    width: auto; /* Establece un ancho automático en lugar de ocupar todo el espacio */
+}
+
+.cerrar-sesion:hover {
+    background-color: #e0e0e0; /* Color de fondo en hover */
+}

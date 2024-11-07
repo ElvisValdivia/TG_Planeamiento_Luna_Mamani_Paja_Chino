@@ -209,15 +209,60 @@ $conn->close();
                     </td>
                 </tr>
             </table>
-            <input type="submit" value="Guardar">
+            <style>
+                /* Estilos para el botón de guardar */
+                input[type="submit"] {
+                    background-color: #4CAF50;
+                    /* Color de fondo */
+                    color: white;
+                    /* Color del texto */
+                    border: none;
+                    /* Eliminar borde */
+                    padding: 12px 20px;
+                    /* Relleno alrededor del texto */
+                    text-align: center;
+                    /* Alineación del texto */
+                    text-decoration: none;
+                    /* Quitar subrayado */
+                    display: inline-block;
+                    /* Mostrar en línea */
+                    font-size: 16px;
+                    /* Tamaño de la fuente */
+                    cursor: pointer;
+                    /* Cambiar cursor a mano */
+                    border-radius: 8px;
+                    /* Bordes redondeados */
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                    /* Sombra para un efecto 3D */
+                    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+                    /* Animación suave */
+                }
+
+                /* Efecto al pasar el ratón sobre el botón */
+                input[type="submit"]:hover {
+                    background-color: #45a049;
+                    /* Color de fondo al pasar el ratón */
+                    transform: scale(1.05);
+                    /* Aumentar el tamaño ligeramente */
+                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+                    /* Sombra más grande al pasar */
+                }
+
+                /* Efecto cuando el botón es presionado */
+                input[type="submit"]:active {
+                    background-color: #388e3c;
+                    /* Color más oscuro al hacer clic */
+                    transform: scale(0.98);
+                    /* Disminuir tamaño al presionar */
+                    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+                    /* Sombra más pequeña al hacer clic */
+                }
+            </style>
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <input type="submit" value="Guardar">
+            </div>
         </form>
-
-
-
-        <div class="info-box">
-            <a class="info-item" href="../Formularios/valores.php">3. VALORES</a>
-            <a class="info-item" href="../Formularios/analisisIE.php">5. ANÁLISIS INTERNO Y EXTERNO</a>
-        </div>
+        <br>
 
         <?php
         // Mostrar mensaje si existe
@@ -226,6 +271,13 @@ $conn->close();
             unset($_SESSION['mensaje']); // Limpiar mensaje después de mostrar
         }
         ?>
+
+        <div class="info-box">
+            <a class="info-item" href="../Formularios/valores.php">3. VALORES</a>
+            <a class="info-item" href="../Formularios/analisisIE.php">5. ANÁLISIS INTERNO Y EXTERNO</a>
+        </div>
+
+        
     </div>
 </body>
 

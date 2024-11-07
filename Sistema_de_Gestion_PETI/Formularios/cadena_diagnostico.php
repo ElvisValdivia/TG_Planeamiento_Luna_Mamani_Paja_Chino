@@ -345,7 +345,58 @@ $preguntas = [
 
 
             <br>
-            <input type="submit" value="Guardar">
+            <<style>
+                /* Estilos para el botón de guardar */
+                input[type="submit"] {
+                    background-color: #4CAF50;
+                    /* Color de fondo */
+                    color: white;
+                    /* Color del texto */
+                    border: none;
+                    /* Eliminar borde */
+                    padding: 12px 20px;
+                    /* Relleno alrededor del texto */
+                    text-align: center;
+                    /* Alineación del texto */
+                    text-decoration: none;
+                    /* Quitar subrayado */
+                    display: inline-block;
+                    /* Mostrar en línea */
+                    font-size: 16px;
+                    /* Tamaño de la fuente */
+                    cursor: pointer;
+                    /* Cambiar cursor a mano */
+                    border-radius: 8px;
+                    /* Bordes redondeados */
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                    /* Sombra para un efecto 3D */
+                    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+                    /* Animación suave */
+                }
+
+                /* Efecto al pasar el ratón sobre el botón */
+                input[type="submit"]:hover {
+                    background-color: #45a049;
+                    /* Color de fondo al pasar el ratón */
+                    transform: scale(1.05);
+                    /* Aumentar el tamaño ligeramente */
+                    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+                    /* Sombra más grande al pasar */
+                }
+
+                /* Efecto cuando el botón es presionado */
+                input[type="submit"]:active {
+                    background-color: #388e3c;
+                    /* Color más oscuro al hacer clic */
+                    transform: scale(0.98);
+                    /* Disminuir tamaño al presionar */
+                    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+                    /* Sombra más pequeña al hacer clic */
+                }
+            </style>
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <input type="submit" value="Guardar">
+            </div>
 
 
         </form>
@@ -362,28 +413,37 @@ $preguntas = [
 
 
     <script>
-        function calcularPotencial() {
-            let total = 0;
-            let count = 0;
+    function calcularPotencial() {
+        // Inicializa el valor de la suma total de las valoraciones
+        let totalValoraciones = 0;
+        let totalRespuestas = 0;
 
-            for (let i = 1; i <= 25; i++) {
-                const radios = document.getElementsByName('valoracion' + i);
-                for (let j = 0; j < radios.length; j++) {
-                    if (radios[j].checked) {
-                        total += parseInt(radios[j].value);
-                        count++;
-                        break;
-                    }
+        // Itera sobre las valoraciones
+        for (let i = 1; i <= 25; i++) {
+            let radios = document.getElementsByName("valoracion" + i);
+            for (let j = 0; j < radios.length; j++) {
+                if (radios[j].checked) {
+                    totalValoraciones += parseInt(radios[j].value); // Suma la respuesta seleccionada
+                    totalRespuestas++;
+                    break;
                 }
             }
-
-            const potencial = (total / (count * 4)) * 100; // Calcular el porcentaje
-            document.getElementById('potenciald').value = potencial.toFixed(2); // Guardar en el input oculto
-            document.getElementById('resultado').innerText = potencial.toFixed(2) + '%'; // Mostrar el resultado
         }
 
-        window.onload = calcularPotencial; // Calcular el potencial al cargar la página
-    </script>
+        // Calcular el porcentaje
+        let porcentaje = 0;
+        if (totalRespuestas > 0) {
+            porcentaje = (totalValoraciones / (totalRespuestas * 4)) * 100;
+        }
+
+        // Mostrar el porcentaje en el HTML
+        document.getElementById("resultado-porcentaje").innerText = porcentaje.toFixed(2) + "%";
+
+        // Actualiza el valor del input hidden para enviar el porcentaje al backend
+        document.getElementById("potenciald").value = porcentaje.toFixed(2);
+    }
+</script>
+
 </body>
 
 </html>

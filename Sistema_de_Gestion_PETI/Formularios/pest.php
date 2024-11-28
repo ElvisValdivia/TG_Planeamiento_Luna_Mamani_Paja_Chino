@@ -396,8 +396,8 @@ $preguntas = [
             <p style="color: green; text-align: center;"><?php echo $mensaje; ?></p>
         <?php endif; ?>
         <div class="info-box">
-            <a class="info-item" href="../Formularios/cadena.php">6. CADENA DE VALOR</a>
-            <a class="info-item" href="../Formularios/analisis7.php">7. BCG</a>
+            <a class="info-item" href="../Formularios/5_fuerzas_porter.php">8. ANÁLISIS PORTER</a>
+            <a class="info-item" href="../Formularios/identificacion.php">10. IDENTIFICACIÓN DE ESTRATEGIAS</a>
         </div>
     </div>
     <script>

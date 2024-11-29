@@ -1,19 +1,24 @@
+<?php
+session_start(); // Iniciar la sesión
+
+if (!isset($_SESSION['usuario_id'])) {
+    // Redirigir a la página de inicio de sesión
+    header("Location: InicioSesion/login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Estratégico</title>
-    <link rel="stylesheet" href="css/primcipal.css">
-</head>
+    <link rel="stylesheet" href="css/principal.css">
 
 <body>
     <div class="container">
-        <!-- Título Principal -->
         <h1>CÓMO ELABORAR UN PLAN ESTRATÉGICO</h1>
-
-        <!-- Sección de descripción -->
         <p>El éxito de las organizaciones reside en gran parte en la capacidad que tienen sus
             directivos en ejecutar una estrategia más que en la calidad de la estrategia en sí.
             Su planificación y asignación de recursos son fundamentales para el logro de la misma.
@@ -25,7 +30,7 @@
             Visualizará dónde quiere estar, dónde está actualmente y, qué camino tendrá que trazar
             para llevarle a otro estado.
         </p>
-        <!-- Pasos a seguir -->
+
         <h2>Para visualizar dónde quiere estar su empresa tendrá que definir:</h2>
         <div class="section">
             <div class="list-container">
@@ -62,29 +67,38 @@
         </h3>
 
         <div class="info-box2">
-            <a class="info-item" href="formularios/informacion.php">INFORMACIÓN</a>
+            <a class="info-item" href="Formularios/informacion.php">INFORMACIÓN</a>
         </div>
 
-        <!-- Información en formato tabla de botones -->
         <div class="info-box">
-            <a class="info-item" href="formularios/mision.php">1. MISIÓN</a>
-            <a class="info-item" href="formularios/analisis_interno_externo.php">5. ANÁLISIS INTERNO Y EXTERNO</a>
-            <a class="info-item" href="formularios/pest.php">9. PEST</a>
-            <a class="info-item" href="formularios/vision.php">2. VISIÓN</a>
-            <a class="info-item" href="formularios/cadena_valor.php">6. CADENA DE VALOR</a>
-            <a class="info-item" href="formularios/identificacion_estrategia.php">10. IDENTIFICACIÓN ESTRATEGIA</a>
-            <a class="info-item" href="formularios/valores.php">3. VALORES</a>
-            <a class="info-item" href="formularios/matriz_participacion.php">7. MATRIZ DE PARTICIPACIÓN</a>
-            <a class="info-item" href="formularios/matriz_came.php">11. MATRIZ CAME</a>
-            <a class="info-item" href="formularios/objetivos.php">4. OBJETIVOS</a>
-            <a class="info-item" href="formularios/5_fuerzas_porter.php">8. LAS 5 FUERZAS DE PORTER</a>
+            <a class="info-item" href="Formularios/mision.php">1. MISIÓN</a>
+            <a class="info-item" href="Formularios/analisisIE.php">5. ANÁLISIS INTERNO Y EXTERNO</a>
+            <a class="info-item" href="Formularios/pest.php">9. PEST</a>
+            <a class="info-item" href="Formularios/vision.php">2. VISIÓN</a>
+            <a class="info-item" href="Formularios/cadena.php">6. CADENA DE VALOR</a>
+            
+
+            <a class="info-item" href="Formularios/estrategia.php">10. IDENTIFICACIÓN DE ESTRATEGIAS</a>
+
+
+            <a class="info-item" href="Formularios/valores.php">3. VALORES</a>
+            <a class="info-item" href="Formularios/analisis7.php">7. MATRIZ DE PARTICIPACIÓN</a>
+            <a class="info-item" href="Formularios/matriz_came.php">11. MATRIZ CAME</a>
+            <a class="info-item" href="Formularios/objetivos.php">4. OBJETIVOS</a>
+            <a class="info-item" href="Formularios/5_fuerzas_porter.php">8. LAS 5 FUERZAS DE PORTER</a>
         </div>
 
         <div class="info-box2">
-            <a class="info-item" href="formularios/resumen.php">RESUMEN DEL PLAN EJECUTIVO</a>
+            <a class="info-item" href="Formularios/resumen.php">RESUMEN DEL PLAN EJECUTIVO</a>
+        </div>
+
+        <!-- Botón para cerrar sesión -->
+        <div class="info-box2">
+            <div class="cerrar-sesion-container">
+                <a class="info-item cerrar-sesion" href="Formularios/cerrar_sesion.php">CERRAR SESIÓN</a>
+            </div>
         </div>
 
     </div>
 </body>
-
 </html>

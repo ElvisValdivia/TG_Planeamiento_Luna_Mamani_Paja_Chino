@@ -26,6 +26,8 @@ if (!isset($_SESSION['usuario_id'])) {
         <!-- Encabezado -->
         <h1>10. IDENTIFICACIÓN DE ESTRATEGIAS</h1>
 
+       
+
         <!-- Matriz de estrategias -->
         <h2>Matriz de Estrategias</h2>
         <div class="matrix-container">
@@ -40,12 +42,10 @@ if (!isset($_SESSION['usuario_id'])) {
             <div class="matrix-item estrategias-supervivencia">ESTRATEGIAS DE SUPERVIVENCIA</div>
         </div>
 
-        <!-- Texto descriptivo -->
-        <p>
+ <!-- Tabla DAFO -->
+ <p>
             Según ha ido cumplimentando en las fases anteriores, los factores internos y externos de su empresa son los siguientes:
         </p>
-
-        <!-- Tabla de DAFO -->
         <div class="dafo-table">
             <div class="row debilidades">
                 <div class="label">DEBILIDADES</div>
@@ -64,6 +64,242 @@ if (!isset($_SESSION['usuario_id'])) {
                 <div class="content"></div>
             </div>
         </div>
+
+
+        <!-- Oportunidades -->
+        <h2>Oportunidades</h2>
+        <table class="matrix-table">
+            <thead>
+                <tr>
+                    <th>FORTALEZAS</th>
+                    <th>O1</th>
+                    <th>O2</th>
+                    <th>O3</th>
+                    <th>O4</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>F1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>F2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>F3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>F4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Tabla de Fortalezas y Amenazas -->
+        <h2>Amenazas</h2>
+        <table class="matrix-table amenazas">
+            <thead>
+                <tr>
+                    <th>FORTALEZAS</th>
+                    <th>A1</th>
+                    <th>A2</th>
+                    <th>A3</th>
+                    <th>A4</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>F1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>F2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>F3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>F4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Tabla de Debilidades y Oportunidades -->
+        <h2>Oportunidades</h2>
+        <table class="matrix-table">
+            <thead>
+                <tr>
+                    <th>DEBILIDADES</th>
+                    <th>O1</th>
+                    <th>O2</th>
+                    <th>O3</th>
+                    <th>O4</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>D1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>D2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>D3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>D4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Tabla de Debilidades y Amenazas -->
+        <h2>Amenazas</h2>
+        <table class="matrix-table amenazas">
+            <thead>
+                <tr>
+                    <th>DEBILIDADES</th>
+                    <th>A1</th>
+                    <th>A2</th>
+                    <th>A3</th>
+                    <th>A4</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>D1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>D2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>D3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>D4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
+    <div class="container">
+        <!-- Tabla de Síntesis de Resultados -->
+        <h2>SÍNTESIS DE RESULTADOS</h2>
+        <table class="synthesis-table">
+            <thead>
+                <tr>
+                    <th>Relaciones</th>
+                    <th>Tipología de estrategia</th>
+                    <th>Puntuación</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>FO</td>
+                    <td>Estrategia Ofensiva</td>
+                    <td class="score">0</td>
+                    <td>Deberá adoptar estrategias de crecimiento</td>
+                </tr>
+                <tr>
+                    <td>AF</td>
+                    <td>Estrategia Defensiva</td>
+                    <td class="score">0</td>
+                    <td>La empresa está preparada para enfrentarse a las amenazas</td>
+                </tr>
+                <tr>
+                    <td>AD</td>
+                    <td>Estrategia de Supervivencia</td>
+                    <td class="score">0</td>
+                    <td>Se enfrenta a amenazas externas sin las fortalezas necesarias para luchar con la competencia</td>
+                </tr>
+                <tr>
+                    <td>OD</td>
+                    <td>Estrategia de Reorientación</td>
+                    <td class="score">0</td>
+                    <td>La empresa no puede aprovechar las oportunidades porque carece de preparación adecuada</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="note">
+            La puntuación mayor le indica la estrategia que deberá llevar a cabo.
+        </p>
+
+        <!-- Botones de Navegación -->
+        <div class="navigation">
+            <a href="pest.php" class="nav-button">9. PEST</a>
+            <a href="matriz_came.php" class="nav-button">11. MATRIZ CAME</a>
+        </div>
+    </div>
+
+
 </body>
 </html>

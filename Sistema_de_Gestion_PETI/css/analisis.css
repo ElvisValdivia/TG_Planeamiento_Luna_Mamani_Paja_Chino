@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.indice-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.indice-button:hover {
+    background-color: #0056b3;
+}
+
+.titulo-container {
+    background-color: #007B7F;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: white;
+}
+
+.highlight {
+    color: white;
+    font-weight: bold;
+}
+
+.texto-container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.imagen-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imagen-analisis {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto-analisis {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #007B7F;
+    margin-top: 20px;
+}
+
+.non-editable-box {
+    background-color: #D3D3D3;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.editable-box {
+    background-color: #FFFFFF; /* Color de fondo del texto editable */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: text;
+}
+
+.foda-container {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.foda-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.foda-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.foda-box.fortalezas {
+    background-color: #A8D5BA; /* Color para Fortalezas */
+}
+
+.foda-box.oportunidades {
+    background-color: #FFD59A; /* Color para Oportunidades */
+}
+
+.foda-box.debilidades {
+    background-color: #FFABAB; /* Color para Debilidades */
+}
+
+.foda-box.amenazas {
+    background-color: #FFC3A0; /* Color para Amenazas */
+}
+
+h3 {
+    margin: 0;
+    color: #333; /* Color para los títulos de los cuadros */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    text-decoration: none; /* Asegura que no haya subrayado */
+    display: inline-block; /* Permite el padding y el background */
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}

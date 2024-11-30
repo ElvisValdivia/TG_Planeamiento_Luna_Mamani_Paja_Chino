@@ -445,9 +445,42 @@ document.addEventListener("DOMContentLoaded", () => {
     calcularTotales();
 });
 </script>
+<style>
+    /* Botones en cuadrícula */
+.info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
 
+.info-item {
+    display: block;
+    background-color: #2596be;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
+.info-item:first-child {
+    grid-column: 1;
+}
+
+.info-item:last-child {
+    grid-column: 2;
+}
+</style>
+<div class="info-box">
+            <a class="info-item" href="../Formularios/analisis7.php">7. BCG</a>
+            <a class="info-item" href="../Formularios/5_fuerzas_porter.php">8. ANÁLISIS PORTER</a>
+        </div>
 
 </div>
+
 </body>
 </html>

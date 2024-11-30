@@ -18,7 +18,7 @@
         </p>
 
         <div class="image-container">
-            <img src="../images/potter.jpg" alt="Modelo de las 5 Fuerzas de Porter">
+            <img src="../Images/potter.jpg" alt="Modelo de las 5 Fuerzas de Porter">
         </div>
 
         <h2>Pasemos a repasar de forma abreviada cómo funciona cada una de las cinco fuerzas.</h2>

@@ -121,8 +121,8 @@ $preguntas = [
 </head>
 
 <body>
-    <a class="volver" href="../principal.php">INDICE</a>
-
+    
+<a class="volver" href="../principal.php">INDICE</a>
     <div class="container">
         <h1>9. ANÁLISIS EXTERNO MACROENTORNO: PEST </h1>
 
@@ -397,7 +397,7 @@ $preguntas = [
         <?php endif; ?>
         <div class="info-box">
             <a class="info-item" href="../Formularios/5_fuerzas_porter.php">8. ANÁLISIS PORTER</a>
-            <a class="info-item" href="../Formularios/identificacion.php">10. IDENTIFICACIÓN DE ESTRATEGIAS</a>
+            <a class="info-item" href="../Formularios/estrategia.php">10. IDENTIFICACIÓN DE ESTRATEGIAS</a>
         </div>
     </div>
     <script>

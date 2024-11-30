@@ -191,3 +191,30 @@ textarea:focus {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+.generar-pdf {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Evitar subrayado */
+}
+
+.generar-pdf:hover {
+    background-color: #45a049;
+}
+
+.container {
+    text-align: center; /* Centrar el contenido de la sección */
+}
+
+.generar-pdf {
+    margin-top: 30px; /* Espacio adicional desde el contenido */
+}

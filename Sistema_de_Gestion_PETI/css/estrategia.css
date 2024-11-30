@@ -1,0 +1,252 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+/* Matriz de Estrategias */
+.matrix-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.matrix-item {
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.matriz-dafo {
+    background-color: #64c2d8;
+}
+
+.oportunidades {
+    background-color: #ffe0b2;
+}
+
+.amenazas {
+    background-color: #90caf9;
+}
+
+.fortalezas {
+    background-color: #a5d6a7;
+}
+
+.debilidades {
+    background-color: #f8bbd0;
+}
+
+.estrategias-ofensivas {
+    background-color: #d1c4e9;
+}
+
+.estrategias-defensivas {
+    background-color: #b2ebf2;
+}
+
+.estrategias-reorientacion {
+    background-color: #ffcc80;
+}
+
+.estrategias-supervivencia {
+    background-color: #ef9a9a;
+}
+
+/* Tablas de Estrategias */
+.matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.matrix-table th, .matrix-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.matrix-table thead th {
+    background-color: #ffe0b2; /* Naranja para fortalezas y oportunidades */
+}
+
+.matrix-table.amenazas thead th {
+    background-color: #90caf9; /* Azul para amenazas */
+}
+
+.matrix-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.matrix-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.matrix-table tfoot td {
+    font-weight: bold;
+    background-color: #ffffcc; /* Amarillo para total */
+}
+
+/* Tabla DAFO */
+.dafo-table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    width: 30%;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.content {
+    width: 70%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: left;
+    border-left: 1px solid #ddd;
+}
+
+/* Colores de cada fila */
+.debilidades .label {
+    background-color: #a5d6a7; /* Verde claro */
+}
+
+.amenazas .label {
+    background-color: #90caf9; /* Azul claro */
+}
+
+.fortalezas .label {
+    background-color: #ffe0b2; /* Naranja claro */
+}
+
+.oportunidades .label {
+    background-color: #f8bbd0; /* Rosa claro */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+/* Síntesis de Resultados Table */
+.synthesis-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.synthesis-table th, .synthesis-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.synthesis-table thead th {
+    background-color: #90caf9; /* Azul claro */
+    font-weight: bold;
+    color: #000;
+}
+
+.synthesis-table .score {
+    background-color: #ffffcc; /* Amarillo claro */
+    font-weight: bold;
+}
+
+.synthesis-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.synthesis-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #64c2d8;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:hover {
+    background-color: #4ba3ba;
+}
